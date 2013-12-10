@@ -1,12 +1,7 @@
 *~
 .DS_Store
-/.node
-/bundles
-/bungledeps
-/nixenv
 /node_modules
 /src/lib/depends_parse.js
 /tests/index.html
 /tests/TestRunner*
-
-*.log
+bundle.js
