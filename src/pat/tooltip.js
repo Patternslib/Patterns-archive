@@ -8,10 +8,10 @@
  */
 define([
     "jquery",
-    "../registry",
-    "../core/parser",
-    "./inject",
-    "../core/remove"
+    "registry",
+    "parser",
+    "inject",
+    "remove"
 ], function($, patterns, Parser, inject) {
     var parser = new Parser("tooltip");
 
@@ -24,7 +24,6 @@ define([
     parser.add_argument("trigger", "click", ["click", "hover"]);
     parser.add_argument("closing", "auto", ["auto", "sticky", "close-button"]);
     parser.add_argument("source", "title", ["ajax", "content", "title"]);
-    parser.add_argument("ajax-data-type", "html", ["html", "markdown"]);
     parser.add_argument("delay", 0);
     parser.add_argument("class");
 
@@ -165,7 +164,7 @@ define([
                     url: source[0],
                     source: "#" + source[1],
                     target: "#" + target_id + "::element",
-                    dataType: options.ajaxDataType
+                    dataType: "html"
                 }], $trigger);
             }
 
