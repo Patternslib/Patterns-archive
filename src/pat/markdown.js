@@ -1,15 +1,15 @@
 define([
     "jquery",
-    "../core/logger",
-    "../registry",
-    "../utils",
-    "./inject",
-    "pagedown",
-    "pagedown/Markdown.Sanitizer",
-    "pagedown-extra"
+    "logger",
+    "registry",
+    "utils",
+    "inject",
+    "Markdown.Converter",
+    "Markdown.Sanitizer",
+    "Markdown.Extra"
 ], function($, logger, registry, utils, inject, Markdown, Sanitizer) {
     var log = logger.getLogger("pat.markdown");
-    
+
     // work around packaging oddities
     Markdown.getSanitizingConverter = Sanitizer.getSanitizingConverter;
 
@@ -53,7 +53,7 @@ define([
             );
             return text;
         },
-	
+
         _stash: function(text, cache) {
             text=_._UnescapeSpecialChars(text);
             return "\n<p>~PM" + (cache.push(text) - 1) + "PM</p>\n";

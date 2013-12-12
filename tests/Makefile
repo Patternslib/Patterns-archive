@@ -3,7 +3,7 @@ JSHINT 		= ../node_modules/.bin/jshint
 PATTERNS 	= $(shell cd ../src; find . -name "*.js")
 TESTS 		= $(wildcard ../tests/specs/*.js) $(wildcard ../tests/specs/**/*.js)
 TARGETS 	= TestRunner.html \
-			  TestRunner.js
+			  # TestRunner.js
 
 
 all:: $(TARGETS)
@@ -31,12 +31,7 @@ TESTLIST 	= $(subst $(space),$(comma),$(patsubst %,\"%\",$(TESTS)))
 jshint: $(TESTS)
 	$(JSHINT) $(TESTS)
 
-TestRunner.js: TestRunner.js.in
-	sed -e "s#@TESTS@#$(TESTLIST)#" $< > $@
-
-TestRunner-bundle.js: TestRunner-modules.js
-	cd ..; \
-	tests/$(BUNGLE) build -i ../tests/$<,$(subst $(space),$(comma),$(TESTS)) \
-	    -E $(subst $(space),$(comma),$(PATTERNS)) -o tests/$@
+# TestRunner.js: TestRunner.js.in
+# 	sed -e "s#@TESTS@#$(TESTLIST)#" $< > $@
 
 .PHONY: all clean

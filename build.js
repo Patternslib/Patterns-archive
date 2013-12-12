@@ -9,6 +9,9 @@
         jquery: 'externals/jquery-1.8.3',
         logging: 'externals/logging',
         'jquery.form': 'externals/jquery.form',
+        'Markdown.Converter': 'externals/pagedown-1.1.0/Markdown.Converter',
+        'Markdown.Sanitizer': 'externals/pagedown-1.1.0/Markdown.Sanitizer',
+        'Markdown.Extra': 'externals/pagedown-extra-2013.04.02/Markdown.Extra',
 
         // Core
         patterns: 'src/patterns',
@@ -26,10 +29,34 @@
         // Patterns
         ajax: 'src/pat/ajax',
         tooltip: 'src/pat/tooltip',
-        inject: 'src/pat/inject'
+        inject: 'src/pat/inject',
+        markdown: 'src/pat/markdown'
 
     },
 
-    // optimize: 'none'
+    shim: {
+        'Markdown.Converter': {
+            exports: 'Markdown'
+        },
+
+        'Markdown.Sanitizer': {
+            deps: ['Markdown.Converter']
+        },
+
+        'Markdown.Extra': {
+            deps: ['Markdown.Converter'],
+
+            init: function (Markdown) {
+                window.Markdown = Markdown;
+            }
+
+        },
+    },
+
+    optimize: 'none'
+
 
 })
+
+
+

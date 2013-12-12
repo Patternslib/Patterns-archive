@@ -1,0 +1,7 @@
+{
+    "name": "pagedown",
+    "manual": false,
+    "main": "Markdown.Converter.js",
+    "sha1": "d120960521eec8bb5b8aa0ee202dac263e36d478",
+    "reqName": "pagedown"
+}

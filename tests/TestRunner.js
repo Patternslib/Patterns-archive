@@ -21,7 +21,8 @@ define("TestRunner", function() {
              "../tests/specs/core/utils.js",
              "../tests/specs/lib/htmlparser.js",
              "../tests/specs/pat/ajax.js",
-             "../tests/specs/pat/inject.js"], function() {
+             "../tests/specs/pat/inject.js",
+             "../tests/specs/pat/markdown.js"], function() {
         jasmineEnv.execute();
     });
 });
