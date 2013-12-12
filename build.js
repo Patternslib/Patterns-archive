@@ -11,7 +11,7 @@
         'jquery.form': 'externals/jquery.form',
         'Markdown.Converter': 'externals/pagedown-1.1.0/Markdown.Converter',
         'Markdown.Sanitizer': 'externals/pagedown-1.1.0/Markdown.Sanitizer',
-        'Markdown.Extra': 'externals/pagedown-extra-2013.04.02/Markdown.Extra',
+        'Markdown.Extra': 'externals/Markdown.Extra',
 
         // Core
         patterns: 'src/patterns',
@@ -32,25 +32,6 @@
         inject: 'src/pat/inject',
         markdown: 'src/pat/markdown'
 
-    },
-
-    shim: {
-        'Markdown.Converter': {
-            exports: 'Markdown'
-        },
-
-        'Markdown.Sanitizer': {
-            deps: ['Markdown.Converter']
-        },
-
-        'Markdown.Extra': {
-            deps: ['Markdown.Converter'],
-
-            init: function (Markdown) {
-                window.Markdown = Markdown;
-            }
-
-        },
     },
 
     optimize: 'none'
