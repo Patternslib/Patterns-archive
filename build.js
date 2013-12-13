@@ -30,7 +30,8 @@
         ajax: 'src/pat/ajax',
         tooltip: 'src/pat/tooltip',
         inject: 'src/pat/inject',
-        markdown: 'src/pat/markdown'
+        markdown: 'src/pat/markdown',
+        forward: 'src/pat/forward'
 
     },
 
