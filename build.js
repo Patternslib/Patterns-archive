@@ -12,6 +12,7 @@
         'Markdown.Converter': 'externals/pagedown-1.1.0/Markdown.Converter',
         'Markdown.Sanitizer': 'externals/pagedown-1.1.0/Markdown.Sanitizer',
         'Markdown.Extra': 'externals/Markdown.Extra',
+        'patternslib.slides': 'externals/slides',
 
         // Core
         patterns: 'src/patterns',
@@ -32,7 +33,8 @@
         tooltip: 'src/pat/tooltip',
         inject: 'src/pat/inject',
         markdown: 'src/pat/markdown',
-        forward: 'src/pat/forward'
+        forward: 'src/pat/forward',
+        slides: 'src/pat/slides'
 
     },
 
