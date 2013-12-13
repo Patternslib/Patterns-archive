@@ -22,6 +22,7 @@
         logger: 'src/core/logger',
         parser: 'src/core/parser',
         remove: 'src/core/remove',
+        url: 'src/core/url',
 
         // Lib
         htmlparser: 'src/lib/htmlparser',
@@ -36,8 +37,6 @@
     },
 
     optimize: 'none'
-
-
 })
 
 
