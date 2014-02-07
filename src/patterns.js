@@ -35,8 +35,9 @@ define([
     "switch",
     "toggle",
     "validate",
-    "zoom"
+    "zoom",
     // "gallery"
+    "packery"
 ], function(registry) {
     return registry;
 });

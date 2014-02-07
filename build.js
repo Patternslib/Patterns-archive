@@ -52,9 +52,18 @@
         "switch": "pat/switch",
         toggle: "pat/toggle",
         validate: "pat/validate",
-        zoom: "pat/zoom"
+        zoom: "pat/zoom",
 
         // gallery: "pat/gallery",
+        // Custom Patterns
+        //
+
+        "imagesloaded": "extras/imagesloaded",
+        "eventEmitter": "extras/eventEmitter",
+        "eventie": "extras/eventie",
+        "packery.pkgd" : "extras/packery.pkgd",
+        "packery": "extras/pat-packery"
+
     },
 
     shim: {
