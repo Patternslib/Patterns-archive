@@ -283,4 +283,4 @@ function defineImagesLoaded( EventEmitter, eventie ) {
 
   return ImagesLoaded;
 
-});
+}}));
