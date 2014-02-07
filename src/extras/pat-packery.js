@@ -4,11 +4,11 @@
  */
 define([
     "jquery",
-    "patterns",
+    "registry",
     "parser",
     "imagesloaded",
     "packery.pkgd"
-], function($, patterns, Parser, imagesLoaded) {
+], function($, registry, Parser, imagesLoaded) {
     var parser = new Parser("packery");
 
     parser.add_argument("item-selector", ".item");
@@ -91,7 +91,7 @@ define([
         }
     };
 
-    patterns.register(packery);
+    registry.register(packery);
     return packery;
 });
 
