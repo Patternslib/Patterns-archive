@@ -39,5 +39,8 @@ define([
     // "gallery"
     "packery"
 ], function(registry) {
+    window.patterns = registry;
     return registry;
 });
+
+require(['patterns']);
