@@ -42,5 +42,3 @@ define([
     window.patterns = registry;
     return registry;
 });
-
-require(['patterns']);

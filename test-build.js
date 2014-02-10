@@ -1,14 +1,11 @@
 ({
     baseUrl: "src",
-    out: 'bundle.js',
-    name: 'almond',
-    include: 'patterns',
-    insertRequire: ['patterns'],
+    out: 'test-bundle.js',
+    name: 'patterns',
 
     paths: {
 
         // Externals
-        almond: 'bower_components/almond/almond',
         jquery: 'bower_components/jquery/jquery',
         logging: 'bower_components/logging/src/logging',
         'jquery.form': 'bower_components/jquery-form/jquery.form',
@@ -55,18 +52,9 @@
         "switch": "pat/switch",
         toggle: "pat/toggle",
         validate: "pat/validate",
-        zoom: "pat/zoom",
+        zoom: "pat/zoom"
 
         // gallery: "pat/gallery",
-        // Custom Patterns
-        //
-
-        "imagesloaded": "extras/imagesloaded",
-        "eventEmitter": "extras/eventEmitter",
-        "eventie": "extras/eventie",
-        "packery.pkgd" : "extras/packery.pkgd",
-        "packery": "extras/pat-packery"
-
     },
 
     shim: {
