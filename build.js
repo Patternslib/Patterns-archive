@@ -18,6 +18,9 @@
         // 'photoswipe.Util': "bower_components/photoswipe/src/lib/code.util-1.0.6/code.util.jquery-1.0.6",
         'parsley': 'bower_components/parsleyjs/parsley',
         'patternslib.slides': 'bower_components/slides/src/slides',
+        'modernizr': 'bower_components/modernizr/modernizr',
+        'less': 'bower_components/less.js/dist/less-1.6.2',
+        'prefixfree': 'bower_components/prefixfree/prefixfree.min',
         // Core
         utils: 'core/utils',
         compat: 'core/compat',
