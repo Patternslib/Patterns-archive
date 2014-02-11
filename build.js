@@ -21,6 +21,11 @@
         'modernizr': 'bower_components/modernizr/modernizr',
         'less': 'bower_components/less.js/dist/less-1.6.2',
         'prefixfree': 'bower_components/prefixfree/prefixfree.min',
+        'select2': 'bower_components/select2/select2.min',
+        'jquery.chosen': 'bower_components/chosen/chosen/chosen.jquery',
+        'jcrop': 'bower_components/jcrop/js/jquery.Jcrop.min',
+        'jquery.fullcalendar': 'bower_components/fullcalendar/fullcalendar.min',
+        'jquery.placeholder': 'bower_components/jquery-placeholder/jquery.placeholder.min',
         // Core
         utils: 'core/utils',
         compat: 'core/compat',
@@ -39,24 +44,40 @@
         // Patterns
         patterns: 'patterns',
         ajax: 'pat/ajax',
-        inject: 'pat/inject',
+        autofocus: 'pat/autofocus',
         autoscale: 'pat/autoscale',
         autosubmit: "pat/autosubmit",
+        autosuggest: 'pat/autosuggest',
+        breadcrumbs: 'pat/breadcrumbs',
         bumper: "pat/bumper",
         carousel: "pat/carousel",
         checkedflag: "pat/checkedflag",
         checklist: "pat/checklist",
+        chosen: "pat/chosen",
         collapsible: "pat/collapsible",
         depends: "pat/depends",
         equaliser: "pat/equaliser",
+        expandable: "pat/expandable",
         focus: "pat/focus",
+        formstate: "pat/form-state",
+        forward: "pat/forward",
+        fullcalendar: "pat/fullcalendar",
+        "image-crop": "pat/image-crop",
+        inject: 'pat/inject',
         legend: "pat/legend",
+        menu: "pat/menu",
         modal: "pat/modal",
+        navigation: "pat/navigation",
+        placeholder: "pat/placeholder",
+        skeleton: "pat/skeleton",
         slides: "pat/slides",
         "slideshow-builder": "pat/slideshow-builder",
+        sortable: "pat/sortable",
         stacks: "pat/stacks",
-        "switch": "pat/switch",
+        subform: "pat/subform",
+        switch: "pat/switch",
         toggle: "pat/toggle",
+        tooltip: "pat/tooltip",
         validate: "pat/validate",
         zoom: "pat/zoom",
 
@@ -80,7 +101,7 @@
 
     },
 
-    optimize: 'none'
+    optimize: 'uglify'
 })
 
 
