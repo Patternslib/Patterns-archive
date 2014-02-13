@@ -56,9 +56,11 @@ define([
     "toggle",
     "tooltip",
     "validate",
-    "url",
-    "zoom"
-    // "gallery"
+    "zoom",
+    "image-crop",
+    "gallery",
+    "markdown",
+    "url"
 ], function($, registry) {
     window.patterns = registry;
     $(function () {
