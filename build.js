@@ -109,7 +109,7 @@
         }
     },
 
-    optimize: 'uglify'
+    optimize: 'none'
 })
 
 
