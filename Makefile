@@ -3,7 +3,7 @@ JSHINT 		?= node_modules/.bin/jshint
 PEGJS		?= node_modules/.bin/pegjs
 PHANTOMJS	?= node_modules/.bin/phantomjs
 
-SOURCES		= $(wildcard src/*.js) $(wildcard src/pat/*.js) $(wildcard src/legacy/*.js) $(wildcard src/lib/*.js)
+SOURCES		= $(wildcard src/*.js) $(wildcard src/pat/*.js) $(wildcard src/lib/*.js)
 BUNDLES		= bundles/patterns.js bundles/patterns.min.js
 THIRDPARTY	= bungledeps $(shell find bungledeps -name '*.js' 2>/dev/null)
 
@@ -29,8 +29,9 @@ stamp-bower: stamp-npm
 	$(BOWER) install
 	touch stamp-bower
 
-tinymce: stamp-bower
+stamp-tinymce:
 	cd src/bower_components/tinymce ; ant
+	touch stamp-tinymce
 
 clean::
 	rm -f stamp-npm stamp-bower
@@ -52,10 +53,10 @@ check:: stamp-npm
 ########################################################################
 ## Bundle generation
 
-bundle bundle.js: $(GENERATED) $(SOURCES) build.js stamp-bower tinymce
+bundle bundle.js: $(GENERATED) $(SOURCES) build.js stamp-bower stamp-tinymce
 	node_modules/.bin/r.js -o build.js
 
-test-bundle test-bundle.js: $(GENERATED) $(SOURCES) test-build.js stamp-bower tinymce
+test-bundle test-bundle.js: $(GENERATED) $(SOURCES) test-build.js stamp-bower stamp-tinymce
 	node_modules/.bin/r.js -o test-build.js
 
 
