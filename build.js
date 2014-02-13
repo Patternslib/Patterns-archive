@@ -85,7 +85,7 @@
         toggle: "pat/toggle",
         tooltip: "pat/tooltip",
         validate: "pat/validate",
-        zoom: "pat/zoom"
+        zoom: "pat/zoom",
 
         "imagesloaded": "extras/imagesloaded",
         "eventEmitter": "extras/eventEmitter",
