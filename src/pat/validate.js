@@ -8,7 +8,7 @@ define([
     "pat-registry",
     "pat-utils",
     "parsley",
-    "parsley.extend"
+    "parsley.dateiso"
 ], function($, patterns, utils) {
     var validate = {
         name: "validate",
