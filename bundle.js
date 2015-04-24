@@ -43023,7 +43023,7 @@ define('pat-modal',[
 // jshint indent: 4, browser: true, jquery: true, quotmark: double
 // vim: sw=4 expandtab
 ;
-define('pat-formstate',[
+define('pat-form-state',[
     "jquery",
     "pat-logger",
     "pat-registry",
@@ -61697,7 +61697,7 @@ define('patterns',[
     "pat-equaliser",
     "pat-expandable",
     "pat-focus",
-    "pat-formstate",
+    "pat-form-state",
     "pat-forward",
     "pat-gallery",
     "pat-image-crop",
